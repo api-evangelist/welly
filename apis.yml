@@ -1,7 +1,24 @@
 aid: welly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/welly.png
 name: Welly
-description: Welly is a company surfaced as a portfolio company of obvious-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Welly is a health and wellness brand and Certified B Corporation that designs first
+  aid and personal care products, best known for its patterned Flex Fabric adhesive bandages, first
+  aid kits, hydrocolloid blemish and bug-bite patches, and antiseptic wipes. Founded to make caring
+  for everyday cuts, scrapes, and playtime injuries more joyful, Welly sells direct-to-consumer
+  through a Shopify storefront at getwelly.com and via national retail partners. As a consumer
+  packaged-goods company it publishes no public developer API or documentation; this profile is
+  maintained in the API Evangelist network as a company record enriched from its public web presence.
 url: https://raw.githubusercontent.com/api-evangelist/welly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Health
+- Wellness
+- Consumer Packaged Goods
+- First Aid
+- Personal Care
+- Ecommerce
+- B Corporation
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/welly-domain-security.yml
 - type: Website
   url: https://getwelly.com
+- type: Support
+  url: https://help.getwelly.com
+- type: PrivacyPolicy
+  url: https://getwelly.com/policies/privacy-policy
+- type: TermsOfService
+  url: https://getwelly.com/policies/terms-of-service
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
